@@ -1,0 +1,166 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body and Root Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* App Container */
+.App {
+  width: 100%;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Image Processor Container */
+.image-processor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Upload Section */
+.upload-section {
+  margin-bottom: 20px;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#file-upload {
+  display: none;
+}
+
+/* Editor Container */
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.preview-container {
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.preview-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Controls Container */
+.controls-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.control-group label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.control-group input[type="range"] {
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.control-group input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.control-group input[type="range"]::-webkit-slider-thumb:hover {
+  background: #ddd;
+}
+
+.control-group select {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.control-group select:hover {
+  border-color: #fff;
+}
+
+.download-button {
+  padding: 12px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
